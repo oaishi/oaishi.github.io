@@ -1,0 +1,67 @@
+
+
+.preview-container {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.preview-data {
+  border: 1px solid #e5e5e5;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 10px;
+  background-color: #f6f6f6;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+.text-container > * + * {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.domain {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+
+@keyframes bouncedelay {
+  0%,
+  100%,
+  80% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+

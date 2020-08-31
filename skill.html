@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/svg_donut.css">
 </head>
 
 <body>
@@ -80,15 +81,94 @@
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="mb-30 title_color">My language Expertise</h3>
-				<div class="progress-table-wrap">
+				<div class="button-group-area">				
+									
+					<svg width="18%" height="18%" viewBox="0 0 42 42" class="donut">
+					  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+					  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+					  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#377bbc" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="0"></circle>
+					  <!-- unused 10% -->
+					  <g class="chart-text">
+						<text x="50%" y="50%" class="chart-number">
+						  80%
+						</text>
+						<text x="50%" y="50%" class="chart-label">
+						  Python
+						</text>
+					  </g>
+					</svg>
+					
+					<svg width="18%" height="18%" viewBox="0 0 42 42" class="donut">
+					  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+					  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+					  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="25"></circle>
+					  <!-- unused 10% -->
+					  <g class="chart-text">
+						<text x="50%" y="50%" class="chart-number">
+						  80%
+						</text>
+						<text x="50%" y="50%" class="chart-label">
+						  Java
+						</text>
+					  </g>
+					</svg>
+					
+					<svg width="18%" height="18%" viewBox="0 0 42 42" class="donut">
+					  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+					  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+					  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FF7F00" stroke-width="3" stroke-dasharray="60 40" stroke-dashoffset="85"></circle>
+					  <!-- unused 10% -->
+					  <g class="chart-text">
+						<text x="50%" y="50%" class="chart-number">
+						  60%
+						</text>
+						<text x="50%" y="50%" class="chart-label">
+						  C#
+						</text>
+					  </g>
+					</svg>
+				
+					<svg width="18%" height="18%" viewBox="0 0 42 42" class="donut">
+					  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+					  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+					  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#00868B" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="35"></circle>
+					  <!-- unused 10% -->
+					  <g class="chart-text">
+						<text x="50%" y="50%" class="chart-number">
+						  80%
+						</text>
+						<text x="50%" y="50%" class="chart-label">
+						  C, C++
+						</text>
+					  </g>
+					</svg>
+					
+					<svg width="18%" height="18%" viewBox="0 0 42 42" class="donut">
+					  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+					  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+					  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#7D26CD" stroke-width="3" stroke-dasharray="60 40" stroke-dashoffset="90"></circle>
+					  <!-- unused 10% -->
+					  <g class="chart-text">
+						<text x="50%" y="50%" class="chart-number">
+						  60%
+						</text>
+						<text x="50%" y="50%" class="chart-label">
+						  Shell
+						</text>
+					  </g>
+					</svg>
+					
+				</div>
+				<!--div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
-							<div class="serial">#</div>
 							<div class="country">Language</div>
 							<div class="percentage">Percentage</div>
 						</div>
 						<div class="table-row">
-							<div class="serial">01</div>
 							<div class="country">Python</div>
 							<div class="percentage">
 								<div class="progress">
@@ -97,7 +177,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							<div class="serial">02</div>
 							<div class="country">Java</div>
 							<div class="percentage">
 								<div class="progress">
@@ -106,7 +185,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							<div class="serial">03</div>
 							<div class="country">C#</div>
 							<div class="percentage">
 								<div class="progress">
@@ -115,7 +193,6 @@
 							</div>
 						</div>
 						<div class="table-row">
-							<div class="serial">04</div>
 							<div class="country">C, C++</div>
 							<div class="percentage">
 								<div class="progress">
@@ -124,50 +201,44 @@
 							</div>
 						</div>
 						<div class="table-row">
-							<div class="serial">05</div>
 							<div class="country">Shell</div>
 							<div class="percentage">
 								<div class="progress">
 									<div class="progress-bar color-7" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 							</div>
-						</div>
-						<!--div class="table-row">
-							<div class="serial">06</div>
-							<div class="country"> <img src="img/elements/f6.jpg" alt="flag">Canada</div>
-							<div class="percentage">
-								<div class="progress">
-									<div class="progress-bar color-6" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="serial">07</div>
-							<div class="country"> <img src="img/elements/f7.jpg" alt="flag">Canada</div>
-							<div class="percentage">
-								<div class="progress">
-									<div class="progress-bar color-7" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div>
-						<div class="table-row">
-							<div class="serial">08</div>
-							<div class="country"> <img src="img/elements/f8.jpg" alt="flag">Canada</div>
-							<div class="percentage">
-								<div class="progress">
-									<div class="progress-bar color-8" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-							</div>
-						</div-->
+						</div>						
 					</div>
-				</div>
+				</div-->
+			</div>
+			
+			<div class="section-top-border">
+				<h3 class="mb-30 title_color">Tools</h3>
+				<div class="button-group-area">
+							<a href="#" class="genric-btn primary e-large">Unity</a>
+							<a href="#" class="genric-btn success e-large">Blender</a>
+							<a href="#" class="genric-btn info e-large">Vuforia</a>
+							<a href="#" class="genric-btn warning e-large">Android Studio</a>
+							<a href="#" class="genric-btn danger e-large">Firebase</a>
+						</div>
+			</div>
+			
+			<div class="section-top-border">
+				<h3 class="mb-30 title_color">Framework</h3>
+				<div class="button-group-area">
+							<a href="#" class="genric-btn warning e-large">Django</a>
+							<a href="#" class="genric-btn primary e-large">Pytorch</a>
+							<a href="#" class="genric-btn success e-large">OpenCV</a>
+							<a href="#" class="genric-btn info e-large">OpenGL</a>							
+							<a href="#" class="genric-btn danger e-large">Google Chrome Extension</a>
+						</div>
 			</div>
 			
 			
-			<div class="section-top-border">
+			<!--div class="section-top-border">
 				<div class="row">	
 					<div class="col-lg-6 col-sm-6 typo-sec">
-						<h3 class="mb-20 title_color">Tools</h3>
+						<h3 class="mb-20 title_color">Tools</h3>												
 						<div class="">
 							<ul class="unordered-list">
 								<li>Unity</li>
@@ -180,7 +251,9 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-sm-6 mt-sm-30 typo-sec">
-						<h3 class="mb-20 title_color">Framework</h3>
+						<h3 class="mb-20 title_color">Framework</h3>	
+																	
+						
 						<div class="">
 							<ul class="unordered-list">
 								<li>Pytorch</li>
@@ -192,7 +265,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div-->
 			
 		</div>
 		
@@ -215,7 +288,7 @@
                             <h4>Contact</h4>
                         </div>
                         <div class="footer_social">
-                            <a href="https://www.facebook.com/EggyPika"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/FariaHuqOaishi"><i class="fa fa-twitter"></i></a>
 							<a href="https://www.linkedin.com/in/faria-huq-058b2a145/"><i class="fa fa-linkedin"></i></a>
 							<a href="https://github.com/oaishi"><i class="fa fa-github"></i></a>
 							<a href="https://www.instagram.com/diy_of_oaishi/"><i class="fa fa-instagram"></i></a>

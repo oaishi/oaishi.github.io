@@ -149,15 +149,15 @@
 									<ul class="ordered-list">
 												<li style="color:black">Synsin<sub style="color:black">baseline</sub>: We train Synsin for 150 epoch (75k iterations) on our dataset.</li>
 												<li style="color:black">DMPHN<sub style="color:black">baseline</sub>: We take the pretrained model of DMPHN and train further on our dataset for 85 epochs until convergence.</li>								
-												<li style="color:black">Synsin<sub style="color:black">disjoint</sub>: We run inference using Synsin<sub style="color:black">baseline</sub> & DMPHN<sub style="color:black">baseline</sub>
+												<li style="color:black">Ours<sub style="color:black">separate</sub>: We run inference using Synsin<sub style="color:black">baseline</sub> & DMPHN<sub style="color:black">baseline</sub>
 												and report it. Specifically, we pass the blurred image through the DMPHN<sub style="color:black">baseline</sub> to get a deblurred image and then pass it through 
 												Synsin<sub style="color:black">baseline</sub> to project into a new view.</li>
-												<li style="color:black">Synsin<sub style="color:black">joint</sub>: We take DMPHN<sub style="color:black">baseline</sub> & 
+												<li style="color:black">Ours<sub style="color:black">final</sub>: We take DMPHN<sub style="color:black">baseline</sub> & 
 												Synsin<sub style="color:black">baseline</sub> and train further for 50 epoch (25k iteration) jointly.</li>
 									</ul>
 								
-								Table 1 and 2 report the results obtained so far. The results show that our joint not only outperforms baseline in terms of novel view synthesis,
-								but also improves result of deblurring operation as well.
+								Table 1 and 2 report the results obtained so far. The results show that our architecture not only outperforms baseline in performance of novel view synthesis,
+								but also improves result of deblurring as well.
 					</div>
 								<br>
 								<img class="img-fluid" src="img/research/table_1.png" alt="">
@@ -172,8 +172,8 @@
 							</p>
 							<br>
 							<p>
-								<b style="color:black">Future Work:</b>
-								As this work is in progress, we are working further to find out how to increase the performance of Synsin.    
+								<b style="color:black">Conclusions:</b>
+								This is a work in progress. Currently, We are working on how to improve performance of our final architecture.   
 							</p>
 					</div>
 				</div>

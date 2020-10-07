@@ -118,11 +118,62 @@
 							myself</h2-->		
 						
 							<p>																
-								description
+								<b style="color:black">Overview:</b>
+								Novel view synthesis is a popular topic which focuses on understanding how the 3D world space would look in the different camera viewpont given a single/set of input images.
+								Several dataset have been introduced recently for this particular task[<a href="https://google.github.io/realestate10k/index.html">1</a>,
+								<a href="https://niessner.github.io/Matterport/">2</a>]. However, all these datasets were curated carefully so that there are minimal artifacts such as 
+								motion blur [<a href="https://google.github.io/realestate10k/index.html">1</a>]. Although this ensures better learning opportunity for a model, this can limit the extend of practical usability of existing novel view synthesis mechanism,
+								especially if we want to deploy it for a handheld camera. Figure 1 shows such an example where the current state-of-the-art 
+								novel view synthesis architecture [<a href="https://arxiv.org/abs/1912.08804">3</a>]
+								generates blurry output given a severely blurred input.
+								<br>
+								<img class="img-fluid" src="img/research/fail_example.png" alt="">
+								<br>
+								In this study, our focus is to minimize the affects of motion blur on novel view synthesis. We aim to utilize image deblurring mechanism together
+								with novel view synthesis to make a robust architecture that can withstand these artifacts.
 							</p>
 							<br>
 							<p>
-								description
+								<b style="color:black">Experiment:</b>
+								For our experiments, we work on the recent architectures proposed by Wiles <i>et al.</i>[<a href="https://arxiv.org/abs/1912.08804">3</a>] and Zhang <i>et al.</i>[<a href="https://arxiv.org/abs/1904.03468">4</a>].
+								We mention them as Synsin and DMPHN heneceforth. Synsin uses neural rendering mechanism to re-project image features
+								into a 3D space and transform into novel views. The whole process is end-to-end and differentiable. On the other hand, DMPHN uses a hierarchical multi-patch network
+								architecture which can work in real-time. We modify their source code to integrate together. We run our experiments using <a href="https://stereoblur.shangchenzhou.com/">Stereo Blur Dataset</a>.
+								The reasons of working on this dataset are - 1) Unlike rest of the datasets available for novel view synthesis, Stereo blur dataset contains both blurred and ground truth information 
+								on a particular timestamp and a particular camera position. 2) The two separate views are captured at the same timestamp, which ensures the views are static with respect to one another.
+								3) The dataset contains a wide variety of outdoor and indoor scenes. 
+							</p>
+							<br>
+							<p>
+								As neither of Synsin and DMPHN are trained on Stereo Blur Dataset before, we run the following experiments :
+									<ul class="ordered-list">
+												<li style="color:black">Synsin<sub style="color:black">baseline</sub>: We train Synsin for 150 epoch (75k iterations) on our dataset.</li>
+												<li style="color:black">DMPHN<sub style="color:black">baseline</sub>: We take the pretrained model of DMPHN and train further on our dataset for 85 epochs until convergence.</li>								
+												<li style="color:black">Synsin<sub style="color:black">disjoint</sub>: We run inference using Synsin<sub style="color:black">baseline</sub> & DMPHN<sub style="color:black">baseline</sub>
+												and report it. Specifically, we pass the blurred image through the DMPHN<sub style="color:black">baseline</sub> to get a deblurred image and then pass it through 
+												Synsin<sub style="color:black">baseline</sub> to project into a new view.</li>
+												<li style="color:black">Synsin<sub style="color:black">joint</sub>: We take DMPHN<sub style="color:black">baseline</sub> & 
+												Synsin<sub style="color:black">baseline</sub> and train further for 50 epoch (25k iteration) jointly.</li>
+									</ul>
+								
+								Table 1 and 2 report the results obtained so far. The results show that our joint not only outperforms baseline in terms of novel view synthesis,
+								but also improves result of deblurring operation as well.
+					</div>
+								<br>
+								<img class="img-fluid" src="img/research/table_1.png" alt="">
+								<br><br>
+			
+								We show few more examples from the test set in the figure below: 
+								<br><br> <br>
+								<img class="img-fluid" src="img/research/deblur_example.png" alt="">
+								<br> <br>
+								More examples available at - <a href="https://drive.google.com/file/d/1PzCli6NeZ1oAUzpY1OwJNe5ZMFa8kdz9/view?usp=sharing">
+								 https://drive.google.com/file/d/1PzCli6NeZ1oAUzpY1OwJNe5ZMFa8kdz9/view?usp=sharing</a>.
+							</p>
+							<br>
+							<p>
+								<b style="color:black">Future Work:</b>
+								As this work is in progress, we are working further to find out how to increase the performance of Synsin.    
 							</p>
 					</div>
 				</div>

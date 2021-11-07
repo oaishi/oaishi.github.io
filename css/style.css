@@ -1714,22 +1714,19 @@ h6 {
     overflow-x: scroll; } }
 .progress-table {
   background: #fff;
-  padding: 15px 0px 30px 0px;
   min-width: 800px; }
 
 .progress-table .serial {
-  width: 11.83%;
-  padding-left: 30px; }
+  width: 8.3%;}
 
 .progress-table .country {
-  width: 28.07%; }
+  width: 25.07%; }
 
 .progress-table .visit {
   width: 19.74%; }
 
 .progress-table .percentage {
-  width: 40.36%;
-  padding-right: 50px; }
+  width: 80%; }
 
 .progress-table .table-head {
   display: flex; }

@@ -3296,6 +3296,22 @@ h6 {
     .footer_area .footer_bottom a {
       color: #854fee; }
 
+
+      @media (min-width: 100px) {
+        .home_right_img_small {
+          margin-left:25%;
+           } }
+      @media (min-width: 991px) {
+        .home_right_img_small {
+          display: none; } }
+
+          
+}
+
+.tagTopic{
+   color: inherit; 
+}
+
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */

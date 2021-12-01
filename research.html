@@ -83,40 +83,43 @@
 			<h1 class="text-heading title_color">Completed Works</h1>
 			
 			<p class="sample-text">
-				<i>(Few works are hidden for double-blind submission policy) </i> 
+				<!--i>(Few works are hidden for double-blind submission policy) </i--> 
 			</p>
 			
-			<!--div class="portfolio_details_inner">
+			<div class="portfolio_details_inner">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="left_img">
-							</br>
-                            <img class="img-fluid" src="img/research/sketching.gif" alt="">
+                            <iframe width="400" height="350" src="https://www.youtube.com/embed/_xzTAlP0NnQ" frameborder="0" 
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-7">
                         <div class="portfolio_right_text mt-30">
                             <h5 class="text-uppercase">Embodied Graph Analytics</h5>
                             <p>
-								<i>(Under Review)</i></br>
-								<!--i class="fa fa-github-alt" style="font-size: 24px;"></i><a href="https://github.com/nsaquib/Embodied-Graphs" ><span>Code</span></a!-->
-								<!--br>
-								Dr. Nazmus Saquib, <b style="color:black">Faria Huq</b>, Syed Arefinul Haque </br>								
+								<i>(Accepted to CHI '22, acceptance rate: 12.5%)</i></br>
+								<i class="fa fa-github-alt" style="font-size: 24px;"></i><a href="https://github.com/nsaquib/Embodied-Graphs" ><span>Code</span></a> |</a> <a href='javascript:void();' onclick="myFunction0()">Abstract</a>
+								<br>
+								Dr. Nazmus Saquib, <b style="color:black">Faria Huq</b>, Dr. Syed Arefinul Haque </br>								
 								<i class="fa fa-tags"  style="font-size: 12px;"></i> Keywords: Sketching Interface, Embodied Mathematics, Graph Analytics, Computer Graphics, Computer Vision, Image Processing
                             </p>
-							<p>                                
-								Graph and network analytics are mostly performed using a combination of symbolic expressions, code, and graph visualizations. 
-								These different representations enable graph-oriented conceptualization, analytics, and presentation of relationships in networks.
-								While many visualization designs are implemented for visual understanding of graphs, they tend to be designed for custom 
-								applications, and do not facilitate graph algebra. We define a design space of general graph analytics by summarizing 
-								the commonly used graphical representations (graphs, simplicial complexes, and hypergraphs) and graph operations, 
-								and map these elements to three brushes and some direct manipulation techniques.
-                            </p>
+							
+							<div style="display: none;" id="myDIV0">
+								<p>                                
+									Graph and network analytics are mostly performed using a combination of symbolic expressions, code, and graph visualizations. 
+									These different representations enable graph-oriented conceptualization, analytics, and presentation of relationships in networks.
+									While many visualization designs are implemented for visual understanding of graphs, they tend to be designed for custom 
+									applications, and do not facilitate graph algebra. We define a design space of general graph analytics by summarizing 
+									the commonly used graphical representations (graphs, simplicial complexes, and hypergraphs) and graph operations, 
+									and map these elements to three brushes and some direct manipulation techniques.
+								</p>
+							</div>
                         </div>
                     </div>
                 </div>
                 
-            </div!-->
+            </div>
 									
 			<div class="portfolio_details_inner">
                 <div class="row">
@@ -130,8 +133,8 @@
                         <div class="portfolio_right_text mt-30">
                             <h5 class="text-uppercase">Review4Repair: Code Review Aided Automatic Program Repairing</h5>
                             <p>
-								<i>(Accepted in <a href="https://www.journals.elsevier.com/information-and-software-technology"> Information and Software Technology </a>)</i></br>
-								<i class="fa fa-file-pdf-o" style="font-size: 24px;"></i> <a href="https://arxiv.org/abs/2010.01544" ><span>Preprint </span> |</a> <a href='javascript:void();' onclick="myFunction1()">Abstract</a>
+								<i>(Published in <a href="https://www.journals.elsevier.com/information-and-software-technology"> Information and Software Technology </a>)</i></br>
+								<i class="fa fa-file-pdf-o" style="font-size: 24px;"></i> <a href="https://doi.org/10.1016/j.infsof.2021.106765" ><span>Doi </span> |</a> <a href='javascript:void();' onclick="myFunction1()">Abstract</a>
 								<br>
                                 <b style="color:black">Faria Huq</b>, Masum Hasan, Mahim Anzum Haque Pantho, Sazan Mahbub, 
 								Prof. Anindya Iqbal, Touﬁque Ahmed
@@ -221,7 +224,7 @@
                         <div class="portfolio_right_text mt-30">
                             <h5 class="text-uppercase">A Tale on Abuse and Its Detection over Online Platforms, Especially over Emails: From the Context of Bangladesh</h5>
                             <p>	
-								<i>(Accepted in NSyss' 21, acceptance rate: 16%)</i></br>
+								<i>(Accepted in NSyss' 21, acceptance rate: 16.67%)</i></br>
 								<i class="fa fa-github-alt" style="font-size: 24px;"></i><a href="https://github.com/oaishi/AbuseDetector-Server" ><span>Code</span></a> |</a> <a href='javascript:void();' onclick="myFunction3()">Abstract</a>
 								<br>
                                 Ishita Haque, Rudaiba Adnin, Sadia Afroz, <b style="color:black">Faria Huq</b>, Sazan Mahbub, Prof. A. B. M. Alim Al Islam  
@@ -551,6 +554,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Faria
 		<script src="js/theme.js"></script>
 
 		<script>
+			function myFunction0() {
+			  var x = document.getElementById("myDIV0");
+			  if (x.style.display === "none") {
+				x.style.display = "block";
+			  } else {
+				x.style.display = "none";
+			  }
+			}
+		
 			function myFunction1() {
 			  var x = document.getElementById("myDIV1");
 			  if (x.style.display === "none") {

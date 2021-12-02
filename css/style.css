@@ -1751,7 +1751,8 @@ h6 {
   align-items: center; }
 
 .progress-table .table-row .country img {
-  margin-right: 15px; }
+  margin-right: 25px; 
+  padding-right: 25px; }
 
 .progress-table .table-row .percentage .progress {
   width: 80%;

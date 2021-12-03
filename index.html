@@ -137,12 +137,13 @@
 							</h3>
 							<br>
 							<br>
-								
+								<!--p>
 								I completed my undergraduate from <a href= "https://cse.buet.ac.bd/home">Department 
 								of Computer Science and Engineering, BUET</a>. 
 								My universe revolves around my passion for visual computing. &#127756 &#127919
 								</br>
 								</br>
+								<--/p>
 								
 								<!--i>
 								Recently, I was accepted as a research fellow in <a href = "https://sgi.mit.edu/sgi-2021-fellows">Summer Geometry Institute <a/> (SGI) where 
@@ -199,8 +200,10 @@
                         </div>
                     </div>
                 </div>
-                
-            </div>
+                					
+			</div>		
+			
+			  
 			
 			<div class="section-top-border">			
 							
@@ -311,12 +314,28 @@
 							</p>
 							<br>
 							<br>
-							<div class="col-lg-5">
-								<div class="left_img">
-									<iframe width="500" height="350" src="https://www.youtube.com/embed/SAk9TtS90hE" frameborder="0" 
-									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+							<div class="portfolio_details_inner">
+								<div class="row">
+									<div class="col-lg-5">
+										<div class="left_img">
+											<iframe width="500" height="350" src="https://www.youtube.com/embed/SAk9TtS90hE" frameborder="0" 
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+									</div>
+									<div class="offset-lg-1 col-lg-5">
+										<div id="slidr-id" style="display: inline-block">
+											<img data-slidr="SDG" src="img/slider/sdg.jpg">
+											<img data-slidr="technica" src="img/slider/technica.jpg">
+											<img data-slidr="SGI post" src="img/slider/SGI.png">
+										</div>
+										<br>
+										<p id="slider-description" style="text-align: center; font-style: italic;"></p>
+									</div>
+									
 								</div>
 							</div>
+							
 							<br>
 							<p>							
 								I love to take part into outreach and volunteer activities. I deeply care about encouraging more women in the field of
@@ -441,10 +460,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Faria
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
+	<script src="js/slidr.min.js"></script>
 	<script src="js/theme.js"></script>
+	
+	<script>
+		var s = slidr.create('slidr-id', {
+			after: function(e) { console.log('in: ' + e.in.slidr);									
+								},
+			breadcrumbs: true,
+			overflow: false,
+			keyboard: true,
+			touch: true
+		});
+		
+		s.add('h', ['SDG', 'technica', 'SGI post', 'SDG']);
+
+		s.auto();
+	</script>	
+	
 </body>
 
 </html>

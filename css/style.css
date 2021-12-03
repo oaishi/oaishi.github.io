@@ -2607,6 +2607,18 @@ h6 {
 
 /* End Brand Area css
 ============================================================================================ */
+
+/* Start Slider Area css
+============================================================================================ */
+#slidr-id{
+	display: flex !important; 
+	align-items: center;  
+	justify-content: center;
+}
+
+/* End Slider Area css
+============================================================================================ */
+
 /* Start Portfolio Area css
 ============================================================================================ */
 .portfolio_area {
@@ -2638,33 +2650,33 @@ h6 {
           margin-right: 20px; } }
 		  
 		  
-.portfolio_TAG_area {
-  padding-bottom: 10px; }
-  @media (max-width: 991px) {
-    .portfolio_TAG_area {
-      padding-bottom: 20px; } }
-  .portfolio_TAG_area .filters ul {
-    padding-left: 0;
-    margin-bottom: 20px; }
-    @media (max-width: 991px) {
-      .portfolio_TAG_area .filters ul {
-        margin-bottom: 20px; } }
-    .portfolio_TAG_area .filters ul li {
-      display: inline-block;
-      margin-right: 50px;
-      font-size: 18px;
-      font-weight: 500;      
-      color: #222222;
-      cursor: pointer;
-      -webkit-transition: all 0.4s ease 0s;
-      -moz-transition: all 0.4s ease 0s;
-      -o-transition: all 0.4s ease 0s;
-      transition: all 0.4s ease 0s; }
-      .portfolio_TAG_area .filters ul li:hover, .portfolio_TAG_area .filters ul li.active {
-        color: #854fee; }
-      @media (max-width: 767px) {
-        .portfolio_TAG_area .filters ul li {
-          margin-right: 20px; } }
+	.portfolio_TAG_area {
+	  padding-bottom: 10px; }
+	  @media (max-width: 991px) {
+		.portfolio_TAG_area {
+		  padding-bottom: 20px; } }
+	  .portfolio_TAG_area .filters ul {
+		padding-left: 0;
+		margin-bottom: 20px; }
+		@media (max-width: 991px) {
+		  .portfolio_TAG_area .filters ul {
+			margin-bottom: 20px; } }
+		.portfolio_TAG_area .filters ul li {
+		  display: inline-block;
+		  margin-right: 50px;
+		  font-size: 18px;
+		  font-weight: 500;      
+		  color: #222222;
+		  cursor: pointer;
+		  -webkit-transition: all 0.4s ease 0s;
+		  -moz-transition: all 0.4s ease 0s;
+		  -o-transition: all 0.4s ease 0s;
+		  transition: all 0.4s ease 0s; }
+		  .portfolio_TAG_area .filters ul li:hover, .portfolio_TAG_area .filters ul li.active {
+			color: #854fee; }
+		  @media (max-width: 767px) {
+			.portfolio_TAG_area .filters ul li {
+			  margin-right: 20px; } }
 
 .portfolio_box {
   margin-bottom: 80px; }

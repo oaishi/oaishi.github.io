@@ -325,12 +325,12 @@
 									</div>
 									<div class="offset-lg-1 col-lg-5">
 										<div id="slidr-id" style="display: inline-block">
-											<img data-slidr="SDG" src="img/slider/sdg.jpg">
-											<img data-slidr="technica" src="img/slider/technica.jpg">
-											<img data-slidr="SGI post" src="img/slider/SGI.png">
+											<img data-slidr="SGI post" src="img/slider/SGI.png" description = "Our SGI Project on Functional Map Synchronization featured on MIT EECS website.">
+											<img data-slidr="SDG" src="img/slider/sdg.jpg" description = "SDG Hackathon 2018. Presenting our smartphone application to fight plastic pollution. We were 1st Runner's Up in that competition.">
+											<img data-slidr="technica" src="img/slider/technica.jpg" description = "Technica Hackathon (Research Track) 2021. Implemented SimCLR for Object classification.">
 										</div>
 										<br>
-										<p id="slider-description" style="text-align: center; font-style: italic;"></p>
+										<p id="slider-description" style="text-align: center; font-style: italic;">Our SGI Project on Functional Map Synchronization featured on MIT EECS website.</p>
 									</div>
 									
 								</div>
@@ -462,7 +462,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Faria
 	
 	<script>
 		var s = slidr.create('slidr-id', {
-			after: function(e) { console.log('in: ' + e.in.slidr);									
+			after: function(e) { console.log('in: ' + e.in.el.getAttribute("description"));	
+								var x = document.getElementById("slider-description"); 
+								x.innerText = e.in.el.getAttribute("description");
 								},
 			breadcrumbs: true,
 			overflow: false,
@@ -470,7 +472,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Faria
 			touch: true
 		});
 		
-		s.add('h', ['SDG', 'technica', 'SGI post', 'SDG']);
+		s.add('h', ['SGI post', 'technica', 'SDG', 'SGI post']);
 
 		s.auto();
 	</script>	

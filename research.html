@@ -85,17 +85,18 @@
 			<div class="filters portfolio-filter">	
 			
 				<ul>
-					<li data-filter=".HCI"># HCI</li>
-					<li data-filter=".A11Y"># A11y</li>
+					<li data-filter=".nlp"># Natural Language Processing</li>
+					<li data-filter=".llm"># Instruction Tuning with LLM</li>
 					<li data-filter=".dl"># Deep Learning</li>
 					<li data-filter=".system"># Interactive System</li>
+					<li data-filter=".HCI"># HCI</li>
 					<li data-filter=".toolkit"># Creative Toolkit</li>
 					<li data-filter=".understanding"># Image & Video Understanding</li>
-					<li data-filter=".nlp"># Natural Language Processing</li>
 					<li data-filter=".ar"># AR / VR</li>	
 					<li data-filter=".cg"># Computer Graphics</li>
 					<!--li data-filter=".gp"># Geometry Processing</li-->
 					<!--li data-filter=".np">#Neural Rendering</li-->
+					<li data-filter=".A11Y"># A11y</li>
 					<li data-filter=".cv"># Computer Vision</li>
 					<!--li data-filter=".3d">#3D vision</li!-->		
                 </ul>	  
@@ -107,9 +108,9 @@
 				
                 <ul>
                     <li class="active" data-filter="*">ALL</li>
+                    <li data-filter=".ongoing">ONGOING</li>
                     <li data-filter=".published">PUBLISHED</li>
 					<li data-filter=".preprint">PREPRINT</li>
-                    <li data-filter=".ongoing">ONGOING</li>
                     <li data-filter=".others">PAST PROJECTS</li>
                 </ul>
 				<i>(click on the icons to view details on each work)</i>
@@ -162,14 +163,16 @@
 					</div>
 
 					<!--RankUI-->
-					<div class="col-lg-4 col-md-6 all ongoing system toolkit HCI nlp dl">
+					<div class="col-lg-4 col-md-6 all ongoing system toolkit HCI nlp dl llm">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
-									<img class="img-fluid" src="img/research/rankui.jpg"  width="320" height="200" alt="">	
+									<img class="img-fluid" src="img/research/rankui_system.jpg"  width="320" height="200" alt="">	
 							</div>
 							<div class="short_info">
-								<h5>Using LLM to Rank Web elements based on User Intent</h5>
+								<h5>"What’s important here?": Opportunities and Challenges of Using LLMs in Retrieving Information from Web Interfaces</h5>
 								
+								<p>
+								<i>(Currently under review)</i></br>
 								<i class="fa fa-expand" style="font-size: 24px;"></i>
 								<a class="popup-with-zoom-anim" href="#small-dialog-11" style="font-size: 18px;">Summary</a>
 								</p>														
@@ -180,11 +183,81 @@
 									<p>                    
 										<h6><b style="color:black">Faria Huq</b>, Jeff Bigham, Nikolas Martelaro </br>								
 										<br><i class="fa fa-tags"  style="font-size: 12px;"></i> 
-										Keywords: Accessibility, Web Interface, LLM
+										Keywords: LLM, Prompt Tuning, Instruction Following, Web Interface
 										<br><br><br>
 										</h6>
                             
-										 We investigate how LLMs perform in ranking relevant elements in a webpage for a user given tasks. We quantify the accuracy of LLM across a range of task difficulties and the level of detail provided in task descriptions. To ensure the relevance and practicality of our study, we collect a small-scale dataset that represents real-world tasks commonly encountered in everyday use.
+										 Large language models (LLMs) that have been trained on large corpus of codes exhibit a remarkable ability to understand HTML code. As web interfaces are mainly constructed using HTML, we design an in-depth study to see how the code understanding ability of LLMs can be used to retrieve and locate important elements for a user given query (i.e. task description) in web interface. In contrast with prior works, which primarily focused on autonomous web navigation, we decompose the problem as an even atomic operation - Can LLMs find out the important information in the web page for a user given query? This decomposition enables us to scrutinize the current capabilities of LLMs and uncover the opportunities and challenges they present. Our empirical experiments show that while LLMs exhibit a reasonable level of performance in retrieving important UI elements, there is still a substantial room for improvement. We hope our investigation will inspire follow-up works in overcoming the current challenges in this domain.
+									</p>
+								</div>	
+							
+							</div>
+						</div>
+					</div>
+
+					<!--User Intention Prediction-->
+					<div class="col-lg-4 col-md-6 all ongoing system toolkit HCI nlp dl llm">
+						<div class="portfolio_box">
+							<div class="single_portfolio">								
+									<img class="img-fluid" src="img/research/intention_project.png"  width="320" height="200" alt="">	
+							</div>
+							<div class="short_info">
+								<h5>User Intention Prediction from Interaction Trace in Web Interfaces</h5>
+								
+								<p>
+								<i>(<a href=https://www.nature.com/articles/s41598-020-73622-y>Image source)</a></i><br>
+								<i class="fa fa-expand" style="font-size: 24px;"></i>
+								<a class="popup-with-zoom-anim" href="#small-dialog-12" style="font-size: 18px;">Summary</a>
+								</p>														
+							
+								<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+								<div id="small-dialog-12" class="zoom-anim-dialog mfp-hide custom-popup-window">
+									
+									<p>                    
+										<h6><b style="color:black">Faria Huq</b>, Yi-hao Peng, Anindya Iqbal, Jeff Bigham </br>								
+										<br><i class="fa fa-tags"  style="font-size: 12px;"></i> 
+										Keywords: LLM, Prompt Tuning, Instruction Following, Web Interface
+										<br><br><br>
+										</h6>
+                            
+										 Understanding user intention is an important subfield of HCI. For example, in search engines, intention prediction is important to understand what the user is looking for and which types of search results they prefer by analyzing their clicking behavior. Based on their intention, the search engine can recommend more relevant results in the top/ at a higher rank. Similarly, by predicting user intention for webpages through their interaction trace, we can uncover what the user is aiming to do, potentially suggesting automation execution of the remaining parts or providing just-in-time intervention when they seem to be struggling to find the information they are looking for. To this end, we aim to predict user intention from their interaction trace with two objectives: 
+										 1) what is their actual goal that they are trying to achieve now? 
+										 2) what is the future trajectory of actions the user is likely to execute?
+
+									</p>
+								</div>	
+							
+							</div>
+						</div>
+					</div>
+
+					<!--Note Taking-->
+					<div class="col-lg-4 col-md-6 all ongoing system toolkit HCI nlp llm">
+						<div class="portfolio_box">
+							<div class="single_portfolio">								
+									<img class="img-fluid" src="img/research/note-taking.jpeg"  width="320" height="200" alt="">	
+							</div>
+							<div class="short_info">
+								<h5>Personalized and Contextualized Note-taking using Instruction-Tuned LLM</h5>
+								
+								<p>
+								<i>(Work in early stage, more details to be added soon.)</i></br>
+								<i>(<a href=https://th.bing.com/th/id/R.a085af9b49f039da83717130671b696f?rik=Gs39NksYog6%2fpg&riu=http%3a%2f%2fcdn.trendhunterstatic.com%2fthumbs%2fnote-taking-tool.jpeg&ehk=PrVPSDf%2bvu%2fD0WHlrcROCkHIpB%2bG12ryQnhfWchsc%2bc%3d&risl=&pid=ImgRaw&r=0>Image source)</a>
+								</i></br>
+								<i class="fa fa-expand" style="font-size: 24px;"></i>
+								<a class="popup-with-zoom-anim" href="#small-dialog-13" style="font-size: 18px;">Summary</a>
+								</p>														
+							
+								<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+								<div id="small-dialog-13" class="zoom-anim-dialog mfp-hide custom-popup-window">
+									
+									<p>                    
+										<h6><b style="color:black">Faria Huq</b>, Abdus Samee, David Chuan-En Lin, Nikolas Martelaro </br>								
+										<br><i class="fa fa-tags"  style="font-size: 12px;"></i> 
+										Keywords: LLM, Prompt Tuning, Instruction Following, Personalized LLM
+										<br><br><br>
+										</h6>
+                            			Large Language Models (LLMs) have demonstrated effectiveness in summarizing long-form documents. However, commercially available note-taking tools based on summarization using LLMs often lack personalization and contextualization. To address this gap, we are developing a novel note-taking tool that leverages user-provided short notes to expand and create comprehensive notes tailored to the individual's needs. We employ techniques such as instruction tuning and user embedding to achieve a higher level of personalization than existing tools like Notion and Goodnote.
 									</p>
 								</div>	
 							

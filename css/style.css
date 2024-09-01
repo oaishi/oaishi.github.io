@@ -1721,7 +1721,7 @@ h6 {
   min-width: 800px; }
 
 .progress-table .serial {
-  width: 8.3%;}
+  width: 35%;}
 
 .progress-table .country {
   width: 25.07%; }
@@ -1730,7 +1730,7 @@ h6 {
   width: 19.74%; }
 
 .progress-table .percentage {
-  width: 80%; }
+  width: 65%; }
 
 .progress-table .table-head {
   display: flex; }

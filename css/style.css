@@ -1715,7 +1715,8 @@ h6 {
 
 @media (max-width: 991px) {
   .progress-table-wrap {
-    overflow-x: scroll; } }
+    overflow-x: scroll; }
+  }
 .progress-table {
   background: #fff;
   min-width: 800px; }
@@ -1753,6 +1754,12 @@ h6 {
 .progress-table .table-row .country img {
   margin-right: 25px; 
   padding-right: 25px; }
+
+.responsive-img {
+  width: 90%; /* The image will take up 100% of its container's width */
+  height: auto; /* The height will adjust automatically based on the width */
+  max-width: 90%; /* Ensures the image doesn't exceed the container's width */
+}
 
 .progress-table .table-row .percentage .progress {
   width: 80%;

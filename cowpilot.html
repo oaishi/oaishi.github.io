@@ -6,7 +6,7 @@
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="CowPilot">
   <meta property="og:title" content="CowPilot"/>
-  <meta property="og:description" content="CowPilot"/>
+  <meta property="og:description" content="CowPilot: A Framework for Autonomous and Human-Agent Collaborative Web Navigation"/>
   <meta property="og:url" content="https://oaishi.github.io/cowpilot.html"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -15,7 +15,7 @@
 
 
   <meta name="twitter:title" content="CowPilot">
-  <meta name="twitter:description" content="CowPilot">
+  <meta name="twitter:description" content="CowPilot: A Framework for Autonomous and Human-Agent Collaborative Web Navigation">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -53,7 +53,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">
-              <img src="static/images/favicon.ico" alt="CowPilot Logo" style="height: 1em; vertical-align: middle; margin-right: 2px;">
+              <img src="static/images/cowpilot.png" alt="CowPilot Logo" style="height: 1em; vertical-align: middle; margin-right: 2px;">
               CowPilot: A Framework for Autonomous and Human-Agent Collaborative Web Navigation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
@@ -83,50 +83,64 @@
                   </div>
 
                   <div class="column has-text-centered">
-                    <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark"> -->
+                        <a href="static/pdfs/CowPilot.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
                         <span>Paper</span>
-                      </a>
-                    </span>
+                        </a>
+                      </span>
+
+                         <!-- Data PDF link -->
+                      <span class="link-block">
+                        <!-- <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark"> -->
+                        <a href="https://drive.google.com/drive/folders/19GOiC-KmdjTwoYOXl1fSJRDejk97dv65?usp=sharing" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa fa-database"></i>
+                        </span>
+                        <span>User Log Data</span>
+                        </a>
+                      </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
                       <span>Supplementary</span>
-                    </a>
-                  </span>
+                      </a>
+                    </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+                      <span>Code</span>
+                    </a>
+                  </span>-->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+              </span> -->
             </div>
           </div>
         </div>
@@ -140,13 +154,13 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
-      </video>
+      </video> -->
+      <img src="static/images/example_figure.jpg" alt="A step-by-step illustration of how human intervention enables the agent to overcome a failure point during task execution."/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        A step-by-step illustration of how human intervention enables the agent to overcome a failure point during task execution.
       </h2>
     </div>
   </div>
@@ -161,7 +175,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Web agents capable of conducting web activities on user behalf have gained attention for their task automation potential. However, they often fall short on complex tasks in dynamic, real-world contexts, making it essential for users to work collaboratively with the agent. We present CowPilot, a framework supporting both autonomous and human-agent collaborative web navigation, and evaluation across task success, user experience, and task efficiency. CowPilot eases human effort by starting with agents proposing next steps, meanwhile allowing humans to execute, pause, or reject agent-proposed steps and take alternative actions instead; supporting seamless action-taking between agent and human participants. We conduct case studies on five websites and find that human-agent collaborative mode achieves the highest 95% success rate while enabling humans to take a minimum of 15.2% steps. Despite human intervention, agents often take initiative and can drive up to half of the task successes. Beyond web automation, CowPilot serves as a useful tool for data collection and agent evaluation across websites, which we hope to facilitate further advances on.
+            Web agents capable of conducting web activities on user behalf have gained attention for their task automation potential. However, they often fall short on complex tasks in dynamic, real-world contexts, making it essential for users to work collaboratively with the agent. We present CowPilot, a framework supporting both autonomous and human-agent collaborative web navigation, and evaluation across task success, user experience, and task efficiency. CowPilot eases human effort by starting with agents proposing next steps, meanwhile allowing humans to execute, pause, or reject agent-proposed steps and take alternative actions instead; supporting seamless action-taking between agent and human participants. We conduct case studies on five websites and find that human-agent collaborative mode achieves the highest 95% success rate while requiring humans to perform only 15.2% of the total steps. Even with human interventions during task execution, the agent successfully drives up to half of task success on its own. CowPilot serves as a useful tool for data collection and agent evaluation across websites, which we hope will facilitate further advances.
           </p>
         </div>
       </div>
@@ -172,33 +186,29 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -207,18 +217,15 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
-
-
-
 
 <!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Video Presentation (WIP)</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
@@ -238,29 +245,36 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">More examples</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <source src="static/videos/example_1.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            'Add one ginger ale to cart (with earlier version of the plugin).'
+          </h2>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            Fourth image description.
+          </h2>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
+        <!-- <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
-        </div>
+          <h2 class="subtitle has-text-centered">
+            Fourth image description.
+          </h2>
+        </div> -->
       </div>
     </div>
   </div>

@@ -108,7 +108,7 @@
 				
                 <ul>
                     <!-- <li class="active" data-filter="*">ALL</li> -->
-                    <li class="active" data-filter=".all">All</li>
+                    <li class="active"data-filter=".all">All</li>
                     <li data-filter=".ongoing">Ongoing</li>
                     <li data-filter=".published">Published</li>
 					<li data-filter=".preprint">Preprint</li>
@@ -199,14 +199,14 @@
 					</div>
 
 					<!--Note Taking-->
-					<!-- <div class="col-lg-4 col-md-6 all ongoing system toolkit HCI llm">
+					<div class="col-lg-4 col-md-6 all published system toolkit HCI llm">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 									<img class="img-fluid" src="img/research/noteeline.jpg"  width="320" height="200" alt="">	
 							</div>
 							<div class="short_info">
 								<h5>NoTeeline: Supporting Real-Time Notetaking from Keypoints with Large Language Models</h5>
-								<i>(under review)</i></br>
+								<i>Appearing in IUI '25</i></br>
 								<p> 
 								<i class="fa fa-file-pdf-o" style="font-size: 24px;"></i>
 								<a href="https://arxiv.org/abs/2409.16493">
@@ -228,7 +228,39 @@
 							
 							</div>
 						</div>
-					</div> -->
+					</div>
+
+					<!--CowPilot-->
+					<div class="col-lg-4 col-md-6 all ongoing agent preprint system toolkit HCI llm">
+						<div class="portfolio_box">
+							<div class="single_portfolio">								
+									<img class="img-fluid" src="static/images/example_figure.jpg"  width="320" height="200" alt="">	
+							</div>
+							<div class="short_info">
+								<h5>CowPilot: A Framework for Autonomous and Human-Agent Collaborative Web Navigation</h5>
+								<i>Under Review in NAACL Demo Track '25</i></br>
+								<p> 
+								<i class="fa fa-file-pdf-o" style="font-size: 24px;"></i>
+								<a href="https://oaishi.github.io/cowpilot.html">
+								<span  style="font-size: 18px;">Homepage</span></a> | <i class="fa fa-expand" style="font-size: 24px;"></i>
+								<a class="popup-with-zoom-anim" href="#small-dialog-14" style="font-size: 18px;">Abstract</a>
+								</p>														
+							
+								<div id="small-dialog-14" class="zoom-anim-dialog mfp-hide custom-popup-window">
+									
+									<p>                    
+										<h6><b style="color:black">Faria Huq</b>, Zora Zhiruo Wang, Frank F. Xu, Tianyue Ou, Shuyan Zhou, Jeffrey P. Bigham*, Graham Neubig* </br>								
+										<br><i class="fa fa-tags"  style="font-size: 12px;"></i> 
+										Keywords: LLM, LLM Agent, Human-Agent Collaboration
+										<br><br><br>
+										</h6>
+                            			Web agents capable of conducting web activities on user behalf have gained attention for their task automation potential. However, they often fall short on complex tasks in dynamic, real-world contexts, making it essential for users to work collaboratively with the agent. We present CowPilot, a framework supporting both autonomous and human-agent collaborative web navigation, and evaluation across task success, user experience, and task efficiency. CowPilot eases human effort by starting with agents proposing next steps, meanwhile allowing humans to execute, pause, or reject agent-proposed steps and take alternative actions instead; supporting seamless action-taking between agent and human participants. We conduct case studies on five websites and find that human-agent collaborative mode achieves the highest 95% success rate while requiring humans to perform only 15.2% of the total steps. Even with human interventions during task execution, the agent successfully drives up to half of task success on its own. CowPilot serves as a useful tool for data collection and agent evaluation across websites, which we hope will facilitate further advances.
+									</p>
+								</div>	
+							
+							</div>
+						</div>
+					</div>
 
 
 					<!--review4repair-->
@@ -295,7 +327,7 @@
 								<div id="small-dialog-5" class="zoom-anim-dialog mfp-hide custom-popup-window">
 									
 									<p>                    
-										<h6><b style="color:black">Faria Huq</b>, Jeff Bigham </br>								
+										<h6><b style="color:black">Faria Huq</b> </br>								
 										<br><i class="fa fa-tags"  style="font-size: 12px;"></i> 
 										Keywords: LLM, Prompt Tuning, Instruction Following, Web Interface
 										<br><br><br>
@@ -688,6 +720,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Faria
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+    	$(document).ready(function () {
+		    var $grid = $('.portfolio-grid').isotope({
+		        itemSelector: '.portfolio_box',
+		        layoutMode: 'fitRows',
+		    });
+
+		    $('.portfolio-filter li').on('click', function () {
+		        $('.portfolio-filter li').removeClass('active');
+		        $(this).addClass('active');
+		        var filterValue = $(this).attr('data-filter');
+		        $grid.isotope({ filter: filterValue });
+		    });
+		});
+    </script>>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

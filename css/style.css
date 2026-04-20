@@ -1761,6 +1761,214 @@ h6 {
   max-width: 90%; /* Ensures the image doesn't exceed the container's width */
 }
 
+.academic_kicker {
+  color: #6B0BA6;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.academic_subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #3f3f3f;
+  margin-bottom: 22px;
+}
+
+.academic_banner_text {
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 680px;
+  color: #4a4a4a;
+  margin-bottom: 28px;
+}
+
+.academic_link_bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 24px;
+}
+
+.academic_link_bar a {
+  color: #6B0BA6;
+  font-weight: 600;
+}
+
+.academic_homepage {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.academic_intro {
+  margin-bottom: 0;
+}
+
+.academic_cta {
+  margin-top: 30px;
+}
+
+.academic_cta .primary_btn {
+  margin-right: 16px;
+  margin-bottom: 12px;
+}
+
+.academic_profile_card,
+.academic_panel,
+.academic_sidebar_block,
+.academic_theme_card {
+  background: #ffffff;
+  border: 1px solid #e6e1dc;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(47, 43, 67, 0.08);
+}
+
+.academic_profile_card {
+  padding: 28px;
+  text-align: left;
+}
+
+.academic_profile_card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 22px;
+}
+
+.academic_profile_card h4 {
+  margin-bottom: 10px;
+}
+
+.academic_contact_list li {
+  margin-bottom: 10px;
+}
+
+.academic_contact_list li i {
+  width: 20px;
+  color: #6B0BA6;
+}
+
+.academic_section_row {
+  margin-top: 8px;
+}
+
+.academic_panel,
+.academic_sidebar_block {
+  padding: 30px;
+}
+
+.academic_theme_card {
+  padding: 24px;
+  margin-bottom: 26px;
+  min-height: 220px;
+}
+
+.academic_theme_card h4 {
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.theme_examples {
+  margin-bottom: 0;
+  color: #6B0BA6;
+  font-weight: 500;
+}
+
+.academic_publications {
+  min-width: 0;
+}
+
+.academic_publications .table-row {
+  align-items: flex-start;
+}
+
+.academic_publications .serial {
+  width: 28%;
+  padding-right: 20px;
+}
+
+.academic_publications .percentage {
+  width: 72%;
+}
+
+.academic_note {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.academic_list li {
+  margin-bottom: 12px;
+}
+
+.academic_personal_note p {
+  max-width: 760px;
+}
+
+.academic_slider_wrap {
+  margin-top: 28px;
+}
+
+.academic_mini_slider {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.academic_mini_slider img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.academic_slider_caption {
+  margin-top: 14px;
+  text-align: center;
+  font-style: italic;
+}
+
+.academic_map_block {
+  text-align: center;
+}
+
+.academic_map_img {
+  max-width: 260px;
+  margin: 0 auto 14px;
+}
+
+.academic_map_note {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .academic_profile_card {
+    margin-top: 30px;
+  }
+
+  .academic_publications .serial,
+  .academic_publications .percentage {
+    width: 100%;
+  }
+
+  .academic_theme_card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .academic_subtitle {
+    font-size: 20px;
+  }
+
+  .academic_banner_text {
+    font-size: 16px;
+  }
+
+  .academic_panel,
+  .academic_sidebar_block,
+  .academic_profile_card,
+  .academic_theme_card {
+    padding: 22px;
+  }
+}
+
 .progress-table .table-row .percentage .progress {
   width: 80%;
   border-radius: 0px;

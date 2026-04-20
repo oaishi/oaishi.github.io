@@ -74,28 +74,18 @@
         
 
 	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area" id="portfolio">
+	<section class="portfolio_area research_list_page" id="portfolio">
         <div class="container">
             			
-			<p><h4>Research Topics</h4> <i>(click on a specific category to see relevant works)</i></p>
+			<p><h4>Research Topics</h4> <i>(use the filters to browse the full list of projects and papers)</i></p>
 			<div class="filters portfolio-filter">	
 			
 				<ul>
-					<li data-filter=".nlp"># Natural Language Processing</li>
-					<li data-filter=".llm"># LLM</li>
-					<li data-filter=".agent"># LLM Web Agent</li>
-					<li data-filter=".dl"># Deep Learning</li>
-					<li data-filter=".system"># Interactive System</li>
-					<li data-filter=".HCI"># HCI</li>
-					<li data-filter=".toolkit"># Creative Toolkit</li>
-					<li data-filter=".understanding"># Image & Video Understanding</li>
-					<li data-filter=".ar"># AR / VR</li>	
-					<li data-filter=".cg"># Computer Graphics</li>
-					<!--li data-filter=".gp"># Geometry Processing</li-->
-					<!--li data-filter=".np">#Neural Rendering</li-->
-					<li data-filter=".A11Y"># A11Y</li>
-					<li data-filter=".cv"># Computer Vision</li>
-					<!--li data-filter=".3d">#3D vision</li!-->		
+					<li data-filter=".humanagent"># Human-Agent Collaboration</li>
+					<li data-filter=".personalized"># Personalized AI</li>
+					<li data-filter=".collective"># Collective Reasoning</li>
+					<li data-filter=".webagents"># Web Agents</li>
+					<li data-filter=".llmui"># LLM Interfaces</li>
                 </ul>	  
 			
             </div>
@@ -104,14 +94,12 @@
             <div class="filters portfolio-filter topic-top-border">	
 				
                 <ul>
-                    <!-- <li class="active" data-filter="*">ALL</li> -->
-                    <li class="active"data-filter=".all">All</li>
-                    <li data-filter=".ongoing">Ongoing</li>
-                    <li data-filter=".published">Published</li>
-					<li data-filter=".preprint">Preprint</li>
-                    <li data-filter=".others">Past Works</li>
+                    <li data-filter="*">All</li>
+                    <li class="active" data-filter=".ongoing">Ongoing</li>
+                    <li data-filter=".publication">Publications</li>
+                    <li data-filter=".earlier">Earlier Work</li>
                 </ul>
-				<i>(click on the   <i class="fa fa-expand" style="font-size: 24px;"></i> icons to view details on each work)</i>
+				<i>(use the <i class="fa fa-expand" style="font-size: 24px;"></i> icon to view details for a project)</i>
             </div>
 			</section>
     
@@ -119,7 +107,7 @@
 				<div class="row portfolio-grid justify-content-center">
 
 					<!--graphiti-->
-					<div class="col-lg-4 col-md-6 all published gp cv system toolkit HCI">
+					<div class="col-lg-4 col-md-6 all publication">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 									<iframe width="320" height="200" src="https://www.youtube.com/embed/_xzTAlP0NnQ?si=d8_AEq8I9T223ITi" frameborder="0" 
@@ -161,7 +149,7 @@
 					</div>
 
 					<!--RankUI-->
-					<div class="col-lg-4 col-md-6 all published nlp llm agent">
+					<div class="col-lg-4 col-md-6 all publication llmui webagents">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 									<img class="img-fluid" src="img/research/rankui_system.jpg"  width="320" height="200" alt="">	
@@ -196,7 +184,7 @@
 					</div>
 
 					<!--Note Taking-->
-					<div class="col-lg-4 col-md-6 all published system toolkit HCI llm">
+					<div class="col-lg-4 col-md-6 all publication personalized llmui humanagent">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 									<img class="img-fluid" src="img/research/noteeline.jpg"  width="320" height="200" alt="">	
@@ -228,7 +216,7 @@
 					</div>
 
 					<!--AI-Mediated Communication-->
-					<div class="col-lg-4 col-md-6 all ongoing preprint HCI llm">
+					<div class="col-lg-4 col-md-6 all ongoing collective">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 									<img class="img-fluid" src="static/images/rai.jpg"  width="320" height="200" alt="">
@@ -260,7 +248,7 @@
 					</div>
 
 					<!--Human Interaction in Web Agents-->
-					<div class="col-lg-4 col-md-6 all ongoing preprint agent HCI llm">
+					<div class="col-lg-4 col-md-6 all ongoing humanagent personalized webagents">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 									<img class="img-fluid" src="static/images/cowcorpus.jpg"  width="320" height="200" alt="">
@@ -292,7 +280,7 @@
 					</div>
 
 					<!--CowPilot-->
-					<div class="col-lg-4 col-md-6 all agent published preprint system toolkit HCI llm">
+					<div class="col-lg-4 col-md-6 all publication humanagent personalized webagents llmui">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 									<img class="img-fluid" src="static/images/example_figure.jpg"  width="320" height="200" alt="">	
@@ -324,7 +312,7 @@
 					</div>
 
 					<!--DreamStruct-->
-					<div class="col-lg-4 col-md-6 all published llm">
+					<div class="col-lg-4 col-md-6 all publication llmui">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 									<img class="img-fluid" src="img/research/dreamstruct.jpeg"  width="320" height="200" alt="">	
@@ -356,7 +344,7 @@
 					</div>
 
 					<!--DIS24-->
-					<div class="col-lg-4 col-md-6 all published system toolkit HCI">
+					<div class="col-lg-4 col-md-6 all publication">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 									<img class="img-fluid" src="img/research/adult.png"  width="320" height="200" alt="">	
@@ -389,7 +377,7 @@
 
 
 					<!--review4repair-->
-					<div class="col-lg-4 col-md-6 all published dl nlp">
+					<div class="col-lg-4 col-md-6 all publication">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid" src="img/research/review.png"  width="320" height="180"  alt="">								
@@ -434,7 +422,7 @@
 					</div>
 					
 					<!--Fmap-->
-					<div class="col-lg-4 col-md-6 all preprint cg gp 3d others">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid" src="img/research/fmap.gif"  width="320" height="200" alt="">								
@@ -475,7 +463,7 @@
 					</div>
 					
 					<!--text2scene-->
-					<div class="col-lg-4 col-md-6 all others preprint dl cg nlp">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 								<iframe width="320" height="200" src="https://www.youtube.com/embed/kLDdtmornOQ" frameborder="0" 
@@ -516,7 +504,7 @@
 					</div>
 					
 					<!--citadel-->
-					<div class="col-lg-4 col-md-6 all published others dl nlp system HCI">
+					<div class="col-lg-4 col-md-6 all publication earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 								<img class="img-fluid" src="img/research/citadel.gif" alt="" width="500" height="350"></img>
@@ -555,7 +543,7 @@
 					</div>
 					
 					<!--Tal-->
-					<div class="col-lg-4 col-md-6 all others dl cg gp 3d">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 								<img class="img-fluid" src="img/research/tal_project.gif" alt="" width="500" height="350"></img>
@@ -593,7 +581,7 @@
 					</div>
 					
 					<!--OptimalTransport-->
-					<div class="col-lg-4 col-md-6 all others cg gp">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 								<img class="img-fluid" src="img/research/aniso_ellipse.gif"  width="300" height="300"  alt=""></img>
@@ -625,7 +613,7 @@
 					</div>
 					
 					<!--EmbodiedVector-->
-					<div class="col-lg-4 col-md-6 all others gp">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 								<img class="img-fluid" src="img/research/vector.gif" alt="" width="500" height="350"></img>
@@ -660,7 +648,7 @@
 					</div>
 
 					<!--chameleon-->
-					<div class="col-lg-4 col-md-6 all others gp ar system toolkit HCI">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid" src="img/research/Chameleon.gif" alt="">								
@@ -704,7 +692,7 @@
 					</div>
 					
 					<!--Synsin-->
-					<div class="col-lg-4 col-md-6 all others dl cg gp np cv 3d">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 								<img class="img-fluid" src="img/research/blur_to_clean.gif" alt="" width="500" height="350"></img>
@@ -739,7 +727,7 @@
 					</div>
 					
 					<!--I3D-->
-					<div class="col-lg-4 col-md-6 all others dl cv understanding">
+					<div class="col-lg-4 col-md-6 all earlier">
 						<div class="portfolio_box">
 							<div class="single_portfolio">								
 								<img class="img-fluid" src="img/research/abuse.gif" alt="" width="300" height="180"></img>
@@ -809,21 +797,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Faria
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>
-    	$(document).ready(function () {
-		    var $grid = $('.portfolio-grid').isotope({
-		        itemSelector: '.portfolio_box',
-		        layoutMode: 'fitRows',
-		    });
-
-		    $('.portfolio-filter li').on('click', function () {
-		        $('.portfolio-filter li').removeClass('active');
-		        $(this).addClass('active');
-		        var filterValue = $(this).attr('data-filter');
-		        $grid.isotope({ filter: filterValue });
-		    });
-		});
-    </script>>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -835,10 +808,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Faria
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/mail-script.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-    <script src="js/gmaps.min.js"></script>
     <script src="js/theme.js"></script>
+    <script>
+    	$(document).ready(function () {
+		    var $grid = $('.portfolio-grid').isotope({
+		        itemSelector: '.col-lg-4',
+		        layoutMode: 'fitRows',
+		        filter: '.ongoing'
+		    });
+
+		    $('.portfolio-filter li').on('click', function () {
+		        $('.portfolio-filter li').removeClass('active');
+		        $(this).addClass('active');
+		        var filterValue = $(this).attr('data-filter');
+		        $grid.isotope({ filter: filterValue });
+		    });
+		});
+    </script>
 		
 </body>
 
